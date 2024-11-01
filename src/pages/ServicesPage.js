@@ -1,4 +1,4 @@
-function CurrencyPage() {
+function ServicesPage() {
 
     return (
         <>
@@ -7,7 +7,7 @@ function CurrencyPage() {
                     <td width="30%">
                         </td>
                     <td colSpan="2">
-                        <h5>Accepted Currencies</h5>
+                        <h5>Available Services</h5>
                     </td>
                 </tr>
                 <tr>
@@ -16,27 +16,18 @@ function CurrencyPage() {
                         &nbsp;
                         </td>
                     <td class="textcolumn" align="left">
-                        US Dollar
+                        Interac Transfer
                         <br />
-                        Canadian Dollar
+                        International Funds Transfer
                         <br />
-                        Euro
-                        <br />
-                        Pound Sterling
-                        <br />
-                        Japanese Yen
-                        <br />
+                        Certified Checks
                     </td>  
                     <td class="textcolumn" align="left">
-                        Swedish Krona
+                        Financial Counselling
                         <br />
-                        Danish Krone
+                        Investor Type
                         <br />
-                        Swiss Frank
-                        <br />
-                        Norwegian Krone
-                        <br />
-                        Luxembourg frank
+                        Debt Consolidation
                     </td>  
                 </tr>
             </table>               
@@ -45,4 +36,4 @@ function CurrencyPage() {
     )
 } 
 
-export default CurrencyPage;
+export default ServicesPage;

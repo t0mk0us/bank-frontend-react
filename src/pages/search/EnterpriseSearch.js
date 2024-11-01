@@ -2,7 +2,7 @@ import React from 'react';
 
   function EnterpriseSearch() {
   
-  const [name, setName] = React.useState('Make a Choice');
+  const [name, setName] = React.useState('Type');
   const [industry, setIndustry] = React.useState('');
 
   const handleNameChange = (event) => {
@@ -25,27 +25,29 @@ import React from 'react';
 
       return (
         <form action="/find_company" id="form2" onSubmit={handleSubmit}>
-            <table>
+            <table class="texttable">
                 <tr>
                     <td colspan="2">
                         <h5>Find a Company</h5>
                     </td>
                 </tr>
                 <tr>
-                    <td align="left">
-                        <h6>Search by Name</h6>
+                    <td class="columntitle">
+                        <b>Search by Name</b>
                     </td>
-                    <td align="left">
-                        <h6>Search by Industry</h6>
+                    <td class="columntitle">
+                        <b>Search by Industry</b>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="textcolumn">
                         <label for="name">Company Name:</label>
+                        &nbsp;
                         <input type="text" id="name" name="name"  value={name} onChange={handleNameChange} /> 
                     </td>
-                    <td>
+                    <td class="textcolumn">
                     <label for="industry">Company Industry:</label>
+                    &nbsp;
                         <input type="text" id="industry" name="industry"  value={industry} onChange={handleIndustryChange} />            
                     </td>
                 </tr>

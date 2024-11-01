@@ -34,33 +34,35 @@ import Dropdown from '../lists/Dropdown';
   
       return (
         <form action="/find_stock" id="form1" onSubmit={handleSubmit}>
-            <table>
+            <table class="texttable">
                 <tr>
                     <td colspan="2">
                         <h5>Find an Investment(s)</h5>
                     </td>
                 </tr>
                 <tr>
-                        <td align="left">
-                            <h6>Search by Stock Type</h6>
+                        <td class="columntitle">
+                            <b>Search by Stock Type</b>
                         </td>
-                        <td align="left">
-                            <h6>Search by Stock Name</h6>
+                        <td class="columntitle">
+                            <b>Search by Stock Name</b>
                         </td>
-                        <td align="left">
-                            <h6>Search by Stock Symbol</h6>
+                        <td class="columntitle">
+                            <b>Search by Stock Symbol</b>
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="textcolumn">
                         <Dropdown
 
                           label="Security Type: &nbsp;"
+
+                          selectclass="selectclass"                            
+                          optionclass="optionclass"
                                                         
                           options={[
-                              { label: 'Choose a Security Type', value: 'Unknown'},
                               { label: 'Mutual Funds', value: 'Mutual Funds' },
-                              { label: 'ETF', value: 'ETF&nbsp;(Exchange-Traded Fund)' },
+                              { label: 'ETF (Exchange-Traded Fund)', value: 'ETF' },
                               { label: 'Bonds', value: 'Bonds' },
                               { label: 'Stocks', value: 'Stocks' },
                               { label: 'Options', value: 'Options' },
@@ -79,12 +81,14 @@ import Dropdown from '../lists/Dropdown';
 
                           />
                           </td>
-                        <td>
+                        <td class="textcolumn">
                         <label for="stockname">Stock Name:&nbsp;</label>
+                        &nbsp;
                             <input type="text" id="stockname" name="stockname"  value={stockname} onChange={handleStockNameChange} />            
                         </td>
-                        <td>
+                        <td class="textcolumn">
                         <label for="stocksymbol">Stock Symbol:&nbsp;</label>
+                        &nbsp;
                             <input type="text" id="stocksymbol" name="stocksymbol"  value={stocksymbol} onChange={handleStockSymbolChange} />            
                         </td>
                     </tr>

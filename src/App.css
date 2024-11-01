@@ -3,21 +3,24 @@ body {
   font-size: 18px;
 }
 
-smallprint {
+.smallprint {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   font-style: italic;
 }
 
 button {
-  padding: 10px;
+  padding: 5px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   background-color: white;
-  color: rgb(151, 96, 14);
+  /*color: #97750e;*/
+  color: #125c99;
+  /*
   border-radius: 5px;
-  border-color: wrgb(151, 96, 14);
-  border-width: 2px;
+  */
+  border-color: #97750e;
+  border-width: 1px;
   cursor: pointer;
 }
 
@@ -29,70 +32,113 @@ button {
   font-weight: 700;
   background-color: white;
   color: #125c99;;
-  border-radius: 5px;
-  border-color: wrgb(151, 96, 14);
-  border-width: 2px;
+  /* border-radius: 5px;
+  */
+  border-color: #97750e;
+  border-width: 1px;
   cursor: pointer;
 }
 
 .searchbutton:hover {
-  background: rgb(151, 96, 14);
+  background: #97750e;
   color: white;
 }
 
 button:hover {
-  background: rgb(151, 96, 14);
+  background: #97750e;
   color: white;
 }
 
 h3{
-  margin-bottom: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
-  color: #2596be;
-  margin-left: 16px;
+  color: #125c99;
+  margin-left: 0px;
+  padding-left: 16px;
+  vertical-align: top;
+  align-content: left;
+}
+
+.insidetitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #125c99;
+  margin-left: 0px;
+  padding-left: 16px;
+  vertical-align: top;
+  align-content: left;
 }
 
 h4 {
-  margin-bottom: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
-  color: #2596be;
+  font-size: 24px;
+  color: #125c99;
   font-weight: 400;
-  margin-left: 16px;
+  margin-left: 50px;
+  padding-left: 16px;
+  vertical-align: top;
+  align-content: left;
+  border-top: 3px solid #125c99;
 }
 
 h5{
-  margin-bottom: 0;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   font-size: 28px;
   font-weight: lighter;
   color: black;
-  margin-left: 16px;
+  margin-left: 0px;
+  padding-left: 16px;
+  vertical-align: top;
+  align-content: left;
 }
 
 h6{
-  margin-bottom: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   color: black;
   font-weight:700;
+  vertical-align: bottom;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.hrline {
+  width: 90%;
+  align-self: right;
+  border-top:2px solid #125c99;
+  color: #125c99;
+  background-color:#125c99
+}
+
+.topimage {
+  padding: 0px;
+  vertical-align: bottom;
+  background-image: url("./pages/images/bkgrounds/AbstractColorful.jpg");
+}
+
+img {
+  /*
+  border: 1px solid #125c99;
+  */
+}
+
+.cardlogo {
+  border: 1px solid #125c99;
 }
 
 footer {
   border-top: 1px solid #125c99;
   text-align: center;
   font-size: 16px;
-  position: fixed;
+  color:grey;
   bottom: 0;
   width: 100%;
   background: white;
 }
 
 nav {
-  /* border-bottom: 2px solid rgb(151, 96, 14); */
-  text-align: center;
-  position: fixed;
+  /* border-bottom: 2px solid #97750e; */
+  text-align: left;
   top: 0;
   width: 100%;
   background: #125c99;
@@ -106,15 +152,18 @@ nav ul {
 
 nav li {
   display: inline-block;
+  /*
   padding-top: 16px;
   padding-bottom: 16px;
+  */
 }
 
 nav a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  padding: 16px 32px;
+  font-weight: normal;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 nav a:hover {
@@ -123,30 +172,25 @@ nav a:hover {
 }
 
 #page-body {
-  /* max-width: 700px; */
-  /* margin: auto; */
-  width: 1000px;
+  width: 100%;
   height: 500px;
   text-align: center;
-  margin-top: 40px;
-  padding-top: 15px;
+  padding: 0px;
   background: #f4f5d5;
   overflow-y: scroll;
 }
 
 #bank-body {
-  /* max-width: 700px; */
-  /* margin: auto; */
-  width: 90%;
+  width: 100%;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-left: 20px;
   overflow-y: scroll;
 }
 
 .article-list-item {
   text-decoration: none;
   color: black;
+  background-color: white;
   padding: 16px 0 0 0;
 }
 
@@ -191,163 +235,122 @@ nav a:hover {
 
 .avatar {
   /*border-radius: 50%;*/
+ /*
   margin-top: 16px;
+  */
+  vertical-align: top;
   margin-left: 16px;
 }
 
 .pagebody {
+  vertical-align: top;
   background: #f4f5d5;
   overflow-y: scroll;
 }
+
 th, td {
-  padding: 15px;
+  padding-left: 0px;
   vertical-align: top;
+/* 
+  border: 1px solid #125c99;
+ */
 }
 
-.dropbtn {
-  background-color: #4CAF50;
+.logo {
+  vertical-align: bottom;
+}
+
+.texttable {
+  padding-left: 10px;
+  vertical-align: top;
+  align-content: left;
+}
+
+.textcolumn {
+  padding-left: 10px;
+  vertical-align: top;
+  align-content: left;
+}
+
+.columntitle {
+  align-content: left;
+  text-align: left;
+  padding-left: 10px;
+}
+
+input[type=text] {
+  background-color:#fce9b1;
+  border: 1px solid #97750e;
+  border-radius: 0px;
+}
+
+text {
+  background-color:#e6d297;
+  border: #125c99;
+  border-width: thin;
+  border-radius: 0%;
+}
+
+select {
+  background-color:  #97750e;
   color: white;
+ /*
   padding: 16px;
+  */
   font-size: 16px;
-  border: none;
+  /*border: #125c99;
+  border-width: thin;
+  */
   cursor: pointer;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f4f5d5;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content:hover 
-{
-  background-color: #f4f5d5;
-}
-
-.dropdown-content {
-  display: block;
-}
-
-.dropdown:hover  {
-  display: block;
-  background-color: #f4f5d5;
-}
-
-.dropdown:hover .dropbtn {
+select:hover {
   background-color: #125c99;
+  color: white;
+  border: #97750e;
+  border-width: thin;
+  border-radius: 0%;
 }
 
-.dropdown-content li {
-  background: white;
-  border-radius: 0.5em;
-}
-.dropdown-content li:hover {
-  background: #f4f5d5;
+.select-items {
+  background-color: white;
+  color: #125c99;
 }
 
-/*the container must be positioned relative:*/
-.custom-select {
-  position: relative;
-  font-family: Arial;
+.selectclass {
+  background-color:  #97750e;
+  color: white;
+  border: #125c99;
+  border-width: 2px;
 }
 
-.custom-select select {
-  display: none; /*hide original SELECT element:*/
+.selectclass:hover {
+  background-color: #125c99;
+  /* background-color: white; */
+  color: white;
+  border-color: #97750e;
+  border-radius: 0%;
+  border-width:thin;
 }
 
-.select-selected {
-  background-color: DodgerBlue;
+.optionclass {
+  background-color: white;
+  color: #125c99;
+  border-radius: 0%;
+  border-color: #97750e;
+  border-width: 1px;
 }
 
-/*style the arrow inside the select element:*/
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+.optionclass:hover {
+  background-color: #97750e;
+  color: white;
 }
 
-/*point the arrow upwards when the select box is open (active):*/
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
- /* The container must be positioned relative: */
- .custom-select {
-  position: relative;
-  font-family: Arial;
-}
-
-.custom-select select {
+.selectclass select {
   display: none; /*hide original SELECT element: */
 }
 
-.select-selected {
-  background-color: DodgerBlue;
+select li {
+  background-color: white;
+  color: #125c99;
 }
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-} 

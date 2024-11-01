@@ -9,22 +9,22 @@ const NavBar = () => {
                     <Link to="/about">Home</Link>
                 </li>
                 <li>
-                    <Link to="/accounts">Client Accounts</Link>
+                    <Link to="/accounts">Available Individual Accounts</Link>
                 </li>
                 <li>
-                    <Link to="/enterprises">Enterprise Accounts</Link>
+                    <Link to="/enterprises">Available Enerprise Accounts</Link>
                 </li>
                 <li>
-                    <Link to="/investments">Investments</Link>
+                    <Link to="/investments">Available Investments</Link>
                 </li>
                 <li>
-                    <Link to="/branches">Branches</Link>
+                    <Link to="/currency">Accepted Currencies</Link>
                 </li>
                 <li>
-                    <Link to="/employees">Employees</Link>
+                    <Link to="/services">Services</Link>
                 </li>
                 <li>
-                    <Link to="/currency">Currency</Link>
+                    <Link to="/contact">Contact</Link>
                 </li>
             </ul>
         </nav>

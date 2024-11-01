@@ -10,6 +10,7 @@ import Dropdown from '../lists/Dropdown';
     const handleProvinceChange = (event) => {
 
       setProvince(event.target.value);
+      alert("Province is set to " + province);
    
     };
 
@@ -34,22 +35,24 @@ import Dropdown from '../lists/Dropdown';
                         </td>
                     </tr>
                     <tr>
-                        <td align="left">
-                            <h6>Search by Province</h6>
+                        <td class="columntitle">
+                            <b>Search by Province</b>
                         </td>
-                        <td align="left">
-                            <h6>Search by Transit #</h6>
+                        <td class="columntitle">
+                            <b>Search by Transit #</b>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                       
+                        <td class="textcolumn">
                             <Dropdown
+
+                                selectclass="selectclass"
+                                optionclass="optionclass"
 
                                 label="Province: &nbsp;"
                                                                
                                 options={[
-                                    { label: 'Choose a Province', value: 'Unknown'},
+                                   /* { label: 'Choose a Province', value: 'Unknown'},*/
                                     { label: 'Alberta', value: 'Alberta' },
                                     { label: 'British Columbia', value: 'British Columbia' },
                                     { label: 'Manitoba', value: 'Manitoba' },
@@ -68,10 +71,10 @@ import Dropdown from '../lists/Dropdown';
                                 
                                 />
                         </td>
-                        <td>
+                        <td class="textcolumn">
                         <label for="transit">Transit Number:</label>
                         &nbsp;&nbsp;
-                        <input type="text" id="transit" name="transit" value={transit} onChange={handleTransitChange} />            
+                        <input class="text" type="text" id="transit" name="transit" value={transit} onChange={handleTransitChange} />            
                         </td>
                     </tr>
                   <tr>

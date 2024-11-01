@@ -33,30 +33,33 @@ import React from 'react';
 
       return (
         <form action="/find_account" id="form1" onSubmit={handleSubmit}>
-            <table>
+            <table class="texttable">
               <tr>
                     <td colspan="2">
                         <h5>Find an Account(s)</h5>
                     </td>
                 </tr>
                 <tr>
-                    <td align="left">
-                        <h6>Search by name</h6>
+                    <td class="columntitle">
+                        <b>Search by name</b>
                     </td>
-                    <td align="left">
-                        <h6>Search by Account #</h6>
+                    <td class="columntitle">
+                        <b>Search by Account #</b>
                     </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="textcolumn">
                       <label for="firstname">First name:</label>
+                      &nbsp;
                       <input type="text" id="firstname" name="firstname"  value={firstname} onChange={handleFirstNameChange} />
                           <br />
                       <label for="lastname">Last name:</label>
+                      &nbsp;
                       <input type="text" id="lastname" name="lastname" value={lastname} onChange={handleLastNameChange} />                   
                   </td>
-                  <td>
+                  <td class="textcolumn">
                   <label for="accountnumber">Account Number:</label>
+                  &nbsp;
                       <input type="text" id="accountnumber" name="accountnumber"  value={accountnumber} onChange={handleAccountNumberChange} />            
                   </td>
               </tr>

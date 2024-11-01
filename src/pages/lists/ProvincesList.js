@@ -1,4 +1,4 @@
-const ProvincesList = () => {
+const ProvincesList = ({ label, value, options, onChange }) => {
 
     const [food, setFood] = React.useState('fruit');
    

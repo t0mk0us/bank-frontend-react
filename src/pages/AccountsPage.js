@@ -9,7 +9,7 @@ const AccountsPage = () => {
                     </td>
                 </tr>
                 <tr>
-                    <td align="left">
+                    <td align="left" class="textcolumn">
                         <h6>
                             Deposit
                             <br />
@@ -22,7 +22,7 @@ const AccountsPage = () => {
                         High Interest Saving
                         <br />                       
                     </td>  
-                    <td align="left">
+                    <td align="left" class="textcolumn">
                         <h6>
                             Loans
                             <br />
@@ -35,7 +35,7 @@ const AccountsPage = () => {
                         Mortgage
                         <br />
                     </td>  
-                    <td align="left">
+                    <td align="left" class="textcolumn">
                         <h6>
                             Investments
                             <br />

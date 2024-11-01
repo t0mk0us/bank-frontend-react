@@ -1,8 +1,8 @@
 function Footer() {
     return (
       <footer>
-        <p>&copy;</p>
-        &nbsp;Design4Logic 2024
+        &copy;
+        Design4Logic 2024
       </footer>
     );
   }

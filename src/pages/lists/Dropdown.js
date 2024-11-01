@@ -1,4 +1,4 @@
-const Dropdown = ({ label, value, options, onChange }) => {
+const Dropdown = ({ label, selectclass, optionclass, value, options, onChange }) => {
 
     return (
    
@@ -6,11 +6,11 @@ const Dropdown = ({ label, value, options, onChange }) => {
    
         {label}
    
-        <select value={value} onChange={onChange}>
+        <select class={selectclass} value={value} onChange={onChange}>
    
           {options.map((option) => (
    
-            <option value={option.value}>{option.label}</option>
+            <option class={optionclass} value={option.value}>{option.label}</option>
    
           ))}
    

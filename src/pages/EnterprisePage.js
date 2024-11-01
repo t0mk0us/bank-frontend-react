@@ -1,4 +1,4 @@
-const AccountsPage = () => {
+const EnterprisePage = () => {
 
   return (
       <>
@@ -10,7 +10,7 @@ const AccountsPage = () => {
                 </tr>
                 <tr>
                     <td align="left"  padding="5px">
-                        Checking
+                        Company Checking
                         <br />
                         Line of Credit
                         <br />
@@ -27,4 +27,4 @@ const AccountsPage = () => {
   )
 } 
 
-export default AccountsPage;
+export default EnterprisePage;
